@@ -1,0 +1,41 @@
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+
+.hero_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+}
+
+.hero_footer {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+
+.hero_downarrow {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+}
+
+.hero_scrolltext {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: white;
+  left: -8px;
+  top: 11px;
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=style.css.map */
