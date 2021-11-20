@@ -27,15 +27,57 @@
   left: 0;
   bottom: 0;
   width: 6px;
+  -webkit-animation-name: kf-arrow-anime;
+          animation-name: kf-arrow-anime;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .hero_scrolltext {
   position: absolute;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  color: white;
   left: -8px;
   top: 11px;
   font-size: 1.2em;
+}
+
+.hero_footer {
+  height: 68px;
+  width: 22px;
+}
+
+@-webkit-keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY("-10%");
+            transform: translateY("-10%");
+  }
+  30% {
+    translate: none;
+  }
+}
+
+@keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY("-10%");
+            transform: translateY("-10%");
+  }
+  30% {
+    translate: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
