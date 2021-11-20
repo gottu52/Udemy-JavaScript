@@ -2,7 +2,7 @@ class MobileMenu {
     constructor() {
         this.DOM = {};
         this.DOM.btn = document.querySelector('.mobile-menu_btn');
-        this.DOM.cover = document.querySelector(".mobile-menu__cover");
+        this.DOM.cover = document.querySelector('.mobile-menu_cover');
         this.DOM.container = document.querySelector('#global-container');
         this.eventType = this._getEventType();
         this._addEvent();   
