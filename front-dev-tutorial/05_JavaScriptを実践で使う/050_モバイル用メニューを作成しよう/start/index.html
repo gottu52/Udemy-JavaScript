@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- メニューボタン -->
+    <!-- 全体 -->
     <div id="global-container">
+        <!-- デフォルト画面 （menu-openでずれる領域）-->
         <div id="container">
             <header class="header">
                 <button class="mobile-menu_btn">
@@ -19,24 +20,23 @@
                 </button> 
             </header>
         </div>
-
-        <!-- メニューの中身     -->
+        <!-- メニューの中身    (menu-openで開く領域) -->
         <nav class="mobile-menu">
             <ul class="mobile-menu_main">
-                <li class="mobilr-menu_item">
-                    <a href="#">
+                <li class="mobile-menu_item">
+                    <a class="mobile-menu_link" href="#">
                         <span class="menu-title">Our service</span>
                         <span class="sub-title">サービスについて</span>
                     </a>
                 </li>
-                <li class="mobilr-menu_item">
-                    <a href="#">
+                <li class="mobile-menu_item">
+                    <a class="mobile-menu_link" href="#">
                         <span class="menu-title">About us</span>
                         <span class="sub-title">私たちについて</span>
                     </a>
                 </li>
-                <li class="mobilr-menu_item">
-                    <a href="#">
+                <li class="mobile-menu_item">
+                    <a class="mobile-menu_link" href="#">
                         <span class="menu-title">Contact us</span>
                         <span class="sub-title">コンタクト方法</span>
                     </a>
@@ -44,7 +44,7 @@
             </ul>
         </nav>
     </div>
+    
     <script src="main.js"></script>
-
 </body>
 </html>
