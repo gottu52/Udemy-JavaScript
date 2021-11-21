@@ -1,0 +1,74 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
+body {
+    font-family: 'Kameron', 'Noto Sans JP', sans-serif;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+// 文字の大きさ
+.font-sm {
+    font-size: 14px;
+}
+.font-md {
+    font-size: 17px;
+}
+.font-lr {
+    font-size: 17px;
+}
+.font-lg {
+    font-size: 25px;
+}
+// margin
+.mb-sm {
+    margin-bottom: 16px !important;
+}
+.mb-lg {
+    margin-bottom: 80px !important;
+}
+// padding
+.pd-sm {
+    padding-bottom: 16px !important;
+}
+.pd-lg {
+    padding-bottom: 80px !important;
+}
+.content-width {
+    width: 90%;
+    margin: auto;
+    max-width: $contetnMaxWidth;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+// extend
+.houses {
+    @extend .content-width;
+    &__title {
+        @extend .font-lr;
+        @extend .mb-sm;
+    }
+    &__btn {
+        text-align: center;
+        flex-basis: 100%;
+    }
+    &__inner {
+        @extend .flex;
+    }
+}
+.main-title {
+    @extend .font-lg;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.sub-title {
+    @extend .font-sm;
+    color: $cSubTitle;
+}
